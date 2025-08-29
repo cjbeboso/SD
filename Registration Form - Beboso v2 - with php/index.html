@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="./assests/css/main.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Registration Form</h2>
+    </div>
+    <form class="form" id="form" action="registration.php" method="POST">
+
+      <div class="form-control">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required />
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="middleName">Middle Name</label>
+        <input type="text" id="middleName" name="middleName" placeholder="Middle name (Optional)" />
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Last name" required />
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="batch">Batch</label>
+        <input type="number" id="batch" name="batch" placeholder="Enter Batch (e.g., 2025)" required />
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="technology">Technology</label>
+        <select name="technology" id="technology" required>
+          <option value="" disabled selected>--Select Technology--</option>
+          <option value="Computer Engineering Technology">Computer Engineering Technology</option>
+          <option value="Electronics Engineering Technology">Electronics Engineering Technology</option>
+          <option value="Electrical Engineering Technology">Electrical Engineering Technology</option>
+          <option value="Mechanical Engineering Technology">Mechanical Engineering Technology</option>
+        </select>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="idNumber">ID Number</label>
+        <input type="text" id="idNumber" name="idNumber" placeholder="2023-33-052" required />
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="contactNumber">Contact Number</label>
+        <input type="number" id="contactNumber" name="contactNumber" placeholder="09XXXXXXXXX" required />
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="./assests/js/script.js"></script>
+</body>
+</html>
